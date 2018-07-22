@@ -1,0 +1,35 @@
+{
+  "name": "spraygun",
+  "version": "0.1.0",
+  "private": true,
+  "bin": "bin/spraygun",
+  "files": [
+    "bin",
+    "src"
+  ],
+  "scripts": {
+    "start": "node bin/spraygun",
+    "lint": "eslint 'src/**/*.js'",
+    "test": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.js": "eslint"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "shelljs": "^0.8.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.2.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-jest": "^21.18.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "husky": "^0.14.3",
+    "jest": "^23.4.1",
+    "jest-junit": "^5.1.0",
+    "lint-staged": "^7.2.0",
+    "prettier": "^1.13.7"
+  }
+}
