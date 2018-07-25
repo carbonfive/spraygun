@@ -1,7 +1,7 @@
 const resolveGit = require("./git");
 
 const aliases = {
-  express: "git@bitbucket.org:mattbrictson/spraygun-node.git",
+  express: "https://github.com/carbonfive/spraygun-express.git",
   react: "git@bitbucket.org:mattbrictson/react-bem-spike.git"
 };
 
