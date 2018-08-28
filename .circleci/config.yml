@@ -1,0 +1,37 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          key: v1-dependencies-{{ arch }}
+
+      - run:
+          name: npm install yarn
+          command: |
+            sudo npm install -g yarn
+            sudo chmod a+x /usr/local/bin/yarn
+
+      - run: yarn install
+
+      - save_cache:
+          key: v1-dependencies-{{ arch }}
+          paths:
+            - ~/.cache/yarn
+
+      - run: yarn lint
+
+      - run:
+          name: yarn test
+          command: yarn test:coverage --ci --color --reporters=default --reporters=jest-junit --runInBand
+          environment:
+            JEST_JUNIT_OUTPUT: ./tmp/test-results/jest.xml
+
+      - store_test_results:
+          path: ./tmp/test-results
