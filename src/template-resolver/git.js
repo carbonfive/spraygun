@@ -5,7 +5,7 @@ const cacheLookup = require("./cache");
 
 function resolve(name) {
   if (!name.match(/^https?:|git:|.+@.+:/)) {
-    return;
+    throw new Error(`Not a git URL: ${name}`);
   }
 
   const cache = cacheLookup(name);
@@ -18,7 +18,7 @@ function resolve(name) {
       );
       return cache.location;
     }
-    return;
+    throw new Error(`Unable to clone git repository: ${name}`);
   }
 
   const tmp = path.resolve(shell.tempdir(), `spraygun-${new Date().getTime()}`);

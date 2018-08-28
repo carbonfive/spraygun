@@ -3,9 +3,8 @@ const path = require("path");
 const chalk = require("chalk");
 const { green, yellow } = chalk;
 const shell = require("shelljs");
-const resolveTemplate = require("./template-resolver");
 
-function generate(projectDirectory, template) {
+function generate(projectDirectory, template, templatePath) {
   assertNotExists(projectDirectory);
 
   console.log(
@@ -14,7 +13,6 @@ function generate(projectDirectory, template) {
     )}...`
   );
 
-  const templatePath = resolveTemplate(template);
   assertValidTemplate(template, templatePath);
 
   // Equivalent to bash set -ex

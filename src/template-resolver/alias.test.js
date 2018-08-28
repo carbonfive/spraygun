@@ -20,8 +20,8 @@ describe("resolve", () => {
   });
 
   describe("for an unrecognized alias", () => {
-    it("returns undefined", () => {
-      expect(resolve("foo")).toBeUndefined();
+    it("throws an error", () => {
+      expect(() => resolve("foo")).toThrow();
     });
   });
 });

@@ -8,7 +8,10 @@ const aliases = {
 function resolve(name) {
   const repo = aliases[name.toLowerCase()];
   if (!repo) {
-    return;
+    throw new Error(
+      `Not a recognized template name: "${name}". ` +
+        "Please refer to `spraygun --help`"
+    );
   }
   return resolveGit(repo);
 }
