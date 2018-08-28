@@ -1,18 +1,10 @@
 const fs = require("fs");
 const path = require("path");
 const chalk = require("chalk");
-const { green, yellow } = chalk;
 const shell = require("shelljs");
 
 function generate(projectDirectory, template, templatePath) {
   assertNotExists(projectDirectory);
-
-  console.log(
-    `Using ${yellow(template)} to create ${green(
-      path.resolve(projectDirectory)
-    )}...`
-  );
-
   assertValidTemplate(template, templatePath);
 
   // Equivalent to bash set -ex

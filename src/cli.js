@@ -1,4 +1,5 @@
 const chalk = require("chalk");
+const path = require("path");
 const yargs = require("yargs-parser");
 const resolvers = require("./resolvers");
 
@@ -43,6 +44,19 @@ function run(args) {
   try {
     const generate = require("./generator");
     const templatePath = resolve(templateName);
+
+    console.log(chalk`
+
+
+${logo}
+  Generating your spraygun project...
+
+  Project   {green ${path.resolve(directory)}}
+  Template  {yellow ${templateName}} {gray from ${templatePath}}
+
+
+    `);
+
     generate(directory, templateName, templatePath);
   } catch (error) {
     console.log(chalk.red(error.message));
