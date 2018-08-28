@@ -1,0 +1,295 @@
+# This recording was generated with terminalizer
+# https://github.com/faressoft/terminalizer
+
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/mattbrictson
+
+  # Export additional ENV variables
+  env:
+    recording: true
+
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 80
+
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 27
+
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+
+  # Quality
+  # 1 - 100
+  quality: 100
+
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 10000
+
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: solid
+    title: null
+    style:
+      backgroundColor: "#323232"
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Menlo, Monaco, Lucida Console, Ubuntu Mono, Monospace"
+
+  # The size of the font
+  fontSize: 18
+
+  # The height of lines
+  lineHeight: 1
+
+  # The spacing between letters
+  letterSpacing: 0
+
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#fafafa"
+    cursor: "#c7c7c7"
+    black: "#2f2f2f"
+    red: "#d24938"
+    green: "#8dcb3c"
+    yellow: "#d5c45a"
+    blue: "#95c1e1"
+    magenta: "#d24d96"
+    cyan: "#3fbbc3"
+    white: "#e2ded1"
+    brightBlack: "#595959"
+    brightRed: "#e65c4b"
+    brightGreen: "#a3dd49"
+    brightYellow: "#ebdc70"
+    brightBlue: "#b4d9f4"
+    brightMagenta: "#e768ae"
+    brightCyan: "#58c5cd"
+    brightWhite: "#f9f7ec"
+
+# Records, feel free to edit them
+records:
+  - delay: 0
+    content: "$ "
+  - delay: 1000
+    content: 'n'
+  - delay: 90
+    content: p
+  - delay: 90
+    content: x
+  - delay: 90
+    content: ' '
+  - delay: 90
+    content: s
+  - delay: 90
+    content: p
+  - delay: 90
+    content: r
+  - delay: 90
+    content: a
+  - delay: 90
+    content: 'y'
+  - delay: 90
+    content: g
+  - delay: 90
+    content: u
+  - delay: 90
+    content: 'n'
+  - delay: 90
+    content: ' '
+  - delay: 90
+    content: '-'
+  - delay: 90
+    content: t
+  - delay: 90
+    content: ' '
+  - delay: 90
+    content: r
+  - delay: 90
+    content: e
+  - delay: 90
+    content: a
+  - delay: 90
+    content: c
+  - delay: 90
+    content: t
+  - delay: 90
+    content: ' '
+  - delay: 90
+    content: m
+  - delay: 90
+    content: 'y'
+  - delay: 90
+    content: '-'
+  - delay: 90
+    content: a
+  - delay: 90
+    content: p
+  - delay: 90
+    content: p
+  - delay: 1000
+    content: "\r\n"
+  - delay: 500
+    content: "exec git clone 'git@github.com:carbonfive/spraygun-react.git' /var/folders/h_/ryry6x995dd19cq0_7vdjjg80000gn/T/spraygun-1535496479802\r\n"
+  - delay: 90
+    content: "Cloning into '/var/folders/h_/ryry6x995dd19cq0_7vdjjg80000gn/T/spraygun-1535496479802'...\r\n"
+  - delay: 2000
+    content: "\r\n\r\n\r\n\e[91m\e[39m\r\n\e[91m    ██████  ██▓███   ██▀███   ▄▄▄    ▓██   ██▓  ▄████  █    ██  ███▄    █\e[39m\r\n\e[91m  ▒██    ▒ ▓██░  ██▒▓██ ▒ ██▒▒████▄   ▒██  ██▒ ██▒ ▀█▒ ██  ▓██▒ ██ ▀█   █\e[39m\r\n\e[91m  ░ ▓██▄   ▓██░ ██▓▒▓██ ░▄█ ▒▒██  ▀█▄  ▒██ ██░▒██░▄▄▄░▓██  ▒██░▓██  ▀█ ██▒\e[39m\r\n\e[91m    ▒   ██▒▒██▄█▓▒ ▒▒██▀▀█▄  ░██▄▄▄▄██ ░ ▐██▓░░▓█  ██▓▓▓█  ░██░▓██▒  ▐▌██▒\e[39m\r\n\e[91m  ▒██████▒▒▒██▒ ░  ░░██▓ ▒██▒ ▓█   ▓██▒░ ██▒▓░░▒▓███▀▒▒▒█████▓ ▒██░   ▓██░\e[39m\r\n\e[91m  ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒▓ ░▒▓░ ▒▒   ▓▒█░ ██▒▒▒  ░▒   ▒ ░▒▓▒ ▒ ▒ ░ ▒░   ▒ ▒\e[39m\r\n\e[91m  ░ ░▒  ░ ░░▒ ░       ░▒ ░ ▒░  ▒   ▒▒░▓██ ░▒░   ░   ░ ░░▒░ ░ ░ ░ ░░   ░ ▒░\e[39m\r\n\e[91m  ░  ░  ░  ░░         ░░   ░   ░   ▒  ▒ ▒ ░░  ░ ░   ░  ░░░ ░ ░    ░   ░ ░\e[39m\r\n\e[91m        ░              ░           ░ ░░ ░           ░    ░              ░\e[39m\r\n\e[91m                                      ░ ░\e[39m\r\n\e[91m\e[39m\r\n  Generating your spraygun project...\r\n\r\n  Project   \e[32m/Users/mattbrictson/my-app\e[39m\r\n  Template  \e[33mreact\e[39m\r\n\r\n\r\n    \r\nCopying files from /Users/mattbrictson/.cache/spraygun/980a63c20b97...\r\n"
+  - delay: 1000
+    content: "Running setup task from /Users/mattbrictson/my-app/.spraygun.js...\r\n"
+  - delay: 500
+    content: "yarn install v1.9.4\r\n"
+  - delay: 500
+    content: "[1/4] Resolving packages...\r\n"
+  - delay: 500
+    content: "[2/4] Fetching packages...\r\n"
+  - delay: 500
+    content: "[3/4] Linking dependencies...\r\n"
+  - delay: 500
+    content: "[4/4] Building fresh packages...\r\n"
+  - delay: 500
+    content: "Done in 2.97s.\r\n"
+  - delay: 90
+    content: "\r\n  \e[32mSuccess!\e[39m Created my-app at /Users/mattbrictson/my-app\r\n  Your new React app contains several commands:\r\n\r\n    \e[36myarn start\e[39m\r\n      Starts the dev server with auto-reloading\r\n\r\n    \e[36myarn test\e[39m\r\n      Starts the test runner\r\n\r\n    \e[36myarn lint\e[39m\r\n      Runs lint checks\r\n\r\n    \e[36myarn build\e[39m\r\n      Bundles the app into build/ for deployment\r\n\r\n  Your app is deployable to Heroku and can build on Circle CI out of the box.\r\n  In addition, a sample Dockerfile is provided should you care to use it.\r\n\r\n  We suggest that you begin by typing:\r\n\r\n    \e[36mcd\e[39m my-app\r\n    \e[36myarn start\e[39m\r\n\r\n  Enjoy your Carbon Five flavored React application!\r\n\r\n"
+  - delay: 90
+    content: "$ "
+  - delay: 5000
+    content: 'n'
+  - delay: 90
+    content: p
+  - delay: 90
+    content: x
+  - delay: 90
+    content: ' '
+  - delay: 90
+    content: s
+  - delay: 90
+    content: p
+  - delay: 90
+    content: r
+  - delay: 90
+    content: a
+  - delay: 90
+    content: 'y'
+  - delay: 90
+    content: g
+  - delay: 90
+    content: u
+  - delay: 90
+    content: 'n'
+  - delay: 90
+    content: ' '
+  - delay: 90
+    content: '-'
+  - delay: 90
+    content: t
+  - delay: 90
+    content: ' '
+  - delay: 90
+    content: e
+  - delay: 90
+    content: x
+  - delay: 90
+    content: p
+  - delay: 90
+    content: r
+  - delay: 90
+    content: e
+  - delay: 90
+    content: s
+  - delay: 90
+    content: s
+  - delay: 90
+    content: ' '
+  - delay: 90
+    content: m
+  - delay: 90
+    content: 'y'
+  - delay: 90
+    content: '-'
+  - delay: 90
+    content: s
+  - delay: 90
+    content: e
+  - delay: 90
+    content: r
+  - delay: 90
+    content: v
+  - delay: 90
+    content: e
+  - delay: 90
+    content: r
+  - delay: 1000
+    content: "\r\n"
+  - delay: 500
+    content: "exec git clone 'git@github.com:carbonfive/spraygun-express.git' /var/folders/h_/ryry6x995dd19cq0_7vdjjg80000gn/T/spraygun-1535498632787\r\n"
+  - delay: 90
+    content: "Cloning into '/var/folders/h_/ryry6x995dd19cq0_7vdjjg80000gn/T/spraygun-1535498632787'...\r\n"
+  - delay: 2000
+    content: "\r\n\r\n\r\n\e[91m\e[39m\r\n\e[91m    ██████  ██▓███   ██▀███   ▄▄▄    ▓██   ██▓  ▄████  █    ██  ███▄    █\e[39m\r\n\e[91m  ▒██    ▒ ▓██░  ██▒▓██ ▒ ██▒▒████▄   ▒██  ██▒ ██▒ ▀█▒ ██  ▓██▒ ██ ▀█   █\e[39m\r\n\e[91m  ░ ▓██▄   ▓██░ ██▓▒▓██ ░▄█ ▒▒██  ▀█▄  ▒██ ██░▒██░▄▄▄░▓██  ▒██░▓██  ▀█ ██▒\e[39m\r\n\e[91m    ▒   ██▒▒██▄█▓▒ ▒▒██▀▀█▄  ░██▄▄▄▄██ ░ ▐██▓░░▓█  ██▓▓▓█  ░██░▓██▒  ▐▌██▒\e[39m\r\n\e[91m  ▒██████▒▒▒██▒ ░  ░░██▓ ▒██▒ ▓█   ▓██▒░ ██▒▓░░▒▓███▀▒▒▒█████▓ ▒██░   ▓██░\e[39m\r\n\e[91m  ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒▓ ░▒▓░ ▒▒   ▓▒█░ ██▒▒▒  ░▒   ▒ ░▒▓▒ ▒ ▒ ░ ▒░   ▒ ▒\e[39m\r\n\e[91m  ░ ░▒  ░ ░░▒ ░       ░▒ ░ ▒░  ▒   ▒▒░▓██ ░▒░   ░   ░ ░░▒░ ░ ░ ░ ░░   ░ ▒░\e[39m\r\n\e[91m  ░  ░  ░  ░░         ░░   ░   ░   ▒  ▒ ▒ ░░  ░ ░   ░  ░░░ ░ ░    ░   ░ ░\e[39m\r\n\e[91m        ░              ░           ░ ░░ ░           ░    ░              ░\e[39m\r\n\e[91m                                      ░ ░\e[39m\r\n\e[91m\e[39m\r\n  Generating your spraygun project...\r\n\r\n  Project   \e[32m/Users/mattbrictson/my-server\e[39m\r\n  Template  \e[33mexpress\e[39m\r\n\r\n\r\n    \r\nCopying files from /Users/mattbrictson/.cache/spraygun/52a7c3235a9a...\r\n"
+  - delay: 1000
+    content: "Running setup task from /Users/mattbrictson/my-server/.spraygun.js...\r\n"
+  - delay: 500
+    content: "yarn install v1.9.4\r\n"
+  - delay: 500
+    content: "[1/4] Resolving packages...\r\n"
+  - delay: 500
+    content: "[2/4] Fetching packages...\r\n"
+  - delay: 500
+    content: "[3/4] Linking dependencies...\r\n"
+  - delay: 500
+    content: "[4/4] Building fresh packages...\r\n"
+  - delay: 500
+    content: "Done in 2.97s.\r\n"
+  - delay: 90
+    content: "\r\n  \e[32mSuccess!\e[39m Created my-server at /Users/mattbrictson/my-server\r\n  Your new Express app contains several commands:\r\n\r\n    \e[36myarn start\e[39m\r\n      Starts the Express server with auto-reloading (suitable for development)\r\n\r\n    \e[36myarn test\e[39m\r\n      Starts the test runner\r\n\r\n    \e[36myarn lint\e[39m\r\n      Runs lint checks\r\n\r\n    \e[36myarn server\e[39m\r\n      Runs the Express server (suitable for production)\r\n\r\n  Your app is deployable to Heroku and can build on Circle CI out of the box.\r\n  In addition, a sample Dockerfile is provided should you care to use it.\r\n\r\n  We suggest that you begin by typing:\r\n\r\n    \e[36mcd\e[39m my-server\r\n    \e[36myarn start\e[39m\r\n\r\n  Enjoy your Carbon Five flavored Express application!\r\n\r\n"
+  - delay: 90
+    content: "$ "
+  - delay: 5000
+    content: ""
