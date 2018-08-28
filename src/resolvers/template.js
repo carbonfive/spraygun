@@ -1,4 +1,4 @@
-const resolveGit = require("./git");
+const resolveRepository = require("./repository");
 
 const aliases = {
   express: "git@github.com:carbonfive/spraygun-express.git",
@@ -13,7 +13,7 @@ function resolve(name) {
         "Please refer to `spraygun --help`"
     );
   }
-  return resolveGit(repo);
+  return resolveRepository(repo);
 }
 
 resolve.aliases = Object.keys(aliases);

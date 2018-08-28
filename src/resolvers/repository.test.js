@@ -1,4 +1,4 @@
-const resolve = require("./git");
+const resolve = require("./repository");
 
 jest.mock("shelljs", () => {
   return {

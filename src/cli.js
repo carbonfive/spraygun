@@ -1,10 +1,6 @@
 const chalk = require("chalk");
 const yargs = require("yargs-parser");
-const resolvers = {
-  template: require("./template-resolver/alias"),
-  repository: require("./template-resolver/git"),
-  path: require("./template-resolver/path")
-};
+const resolvers = require("./resolvers");
 
 const logo = chalk.redBright(`
     ██████  ██▓███   ██▀███   ▄▄▄     ▓██   ██▓  ▄████  █    ██  ███▄    █

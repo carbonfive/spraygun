@@ -1,19 +1,19 @@
-const resolve = require("./alias");
+const resolve = require("./template");
 
-jest.mock("./git", () => {
+jest.mock("./repository", () => {
   return jest.fn();
 });
 
 describe("resolve", () => {
   describe("for a recognized alias", () => {
-    it("delegates to the git resolver", () => {
-      const gitResolve = require("./git");
-      gitResolve.mockReturnValue("/path/to/resolved/repo");
+    it("delegates to the repository resolver", () => {
+      const repositoryResolve = require("./repository");
+      repositoryResolve.mockReturnValue("/path/to/resolved/repo");
 
       const path = resolve("react");
 
       expect(path).toEqual("/path/to/resolved/repo");
-      expect(gitResolve).toHaveBeenCalledWith(
+      expect(repositoryResolve).toHaveBeenCalledWith(
         "git@github.com:carbonfive/spraygun-react.git"
       );
     });
