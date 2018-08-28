@@ -10,6 +10,7 @@ function generate(projectDirectory, template, templatePath) {
   // Equivalent to bash set -x
   shell.config.fatal = true;
 
+  console.log(`Copying files from ${path.resolve(templatePath)}...`);
   shell.cp("-R", templatePath, projectDirectory);
   const scriptPath = path.resolve(projectDirectory, ".spraygun.js");
   console.log(`Running setup task from ${scriptPath}...`);

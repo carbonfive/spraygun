@@ -52,7 +52,7 @@ ${logo}
   Generating your spraygun project...
 
   Project   {green ${path.resolve(directory)}}
-  Template  {yellow ${templateName}} {gray from ${templatePath}}
+  Template  {yellow ${templateName}}
 
 
     `);
