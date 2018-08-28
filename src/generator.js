@@ -7,9 +7,8 @@ function generate(projectDirectory, template, templatePath) {
   assertNotExists(projectDirectory);
   assertValidTemplate(template, templatePath);
 
-  // Equivalent to bash set -ex
+  // Equivalent to bash set -x
   shell.config.fatal = true;
-  shell.config.verbose = true;
 
   shell.cp("-R", templatePath, projectDirectory);
   const scriptPath = path.resolve(projectDirectory, ".spraygun.js");
