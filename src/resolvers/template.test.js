@@ -14,7 +14,7 @@ describe("resolve", () => {
 
       expect(path).toEqual("/path/to/resolved/repo");
       expect(repositoryResolve).toHaveBeenCalledWith(
-        "git@github.com:carbonfive/spraygun-react.git"
+        "https://github.com/carbonfive/spraygun-react.git"
       );
     });
   });
