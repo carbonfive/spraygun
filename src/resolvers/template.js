@@ -1,8 +1,8 @@
 const resolveRepository = require("./repository");
 
 const aliases = {
-  express: "git@github.com:carbonfive/spraygun-express.git",
-  react: "git@github.com:carbonfive/spraygun-react.git"
+  express: "https://github.com/carbonfive/spraygun-express.git",
+  react: "https://github.com/carbonfive/spraygun-react.git"
 };
 
 function resolve(name) {
