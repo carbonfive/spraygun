@@ -1,5 +1,7 @@
 # spraygun
 
+[![CircleCI](https://circleci.com/gh/carbonfive/spraygun/tree/master.svg?style=svg)](https://circleci.com/gh/carbonfive/spraygun/tree/master)
+
 Spraygun is a JavaScript application generator that builds projects with Carbon Five preferences and best practices baked right in. Spend less time configuring and more building cool features.
 
 Two application templates are supported out of the box:
