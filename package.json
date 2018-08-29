@@ -1,9 +1,23 @@
 {
   "name": "spraygun",
+  "description": "Quickly generate JavaScript apps from Carbon Five-flavored templates",
+  "keywords": [],
   "version": "0.1.0",
-  "private": true,
   "license": "MIT",
-  "bin": "bin/spraygun",
+  "author": "Carbon Five",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carbonfive/spraygun.git"
+  },
+  "bugs": {
+    "type": "git",
+    "url": "https://github.com/carbonfive/spraygun/issues"
+  },
+  "homepage": {
+    "type": "git",
+    "url": "https://github.com/carbonfive/spraygun"
+  },
+  "bin": "./bin/spraygun",
   "files": [
     "bin",
     "src"
@@ -33,6 +47,9 @@
     "jest-junit": "^5.1.0",
     "lint-staged": "^7.2.0",
     "prettier": "^1.13.7"
+  },
+  "engines": {
+    "node": ">=8.10.0"
   },
   "jest": {
     "testEnvironment": "node",
