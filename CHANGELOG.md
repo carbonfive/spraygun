@@ -6,7 +6,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## Unreleased
 
-https://github.com/carbonfive/spraygun/compare/v0.1.0...HEAD
+https://github.com/carbonfive/spraygun/compare/v0.1.1...HEAD
+
+## 0.1.1 - 2018-08-31
+
+https://github.com/carbonfive/spraygun/compare/v0.1.0...v0.1.1
 
 - Show a link to the docs in the usage message
 - Fix failing repository test
