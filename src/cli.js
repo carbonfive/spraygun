@@ -34,6 +34,8 @@ ${aliasBullets}
   To use a custom template, specify one of the following:
     {yellow -p path}   a local template directory
     {yellow -r URL}    a git repository URL
+
+  Visit {cyan https://github.com/carbonfive/spraygun} to learn more.
 `;
 
 function run(args) {
