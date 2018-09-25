@@ -4,10 +4,11 @@
 
 Spraygun is a JavaScript application generator that builds projects with Carbon Five preferences and best practices baked right in. Spend less time configuring and more building cool features.
 
-Two application templates are supported out of the box:
+Three application templates are supported out of the box:
 
 - [spraygun-express](https://github.com/carbonfive/spraygun-express)
 - [spraygun-react](https://github.com/carbonfive/spraygun-react)
+- [spraygun-react-ts](https://github.com/carbonfive/spraygun-react-ts)
 
 Refer to the GitHub projects for each of these templates for more information.
 
