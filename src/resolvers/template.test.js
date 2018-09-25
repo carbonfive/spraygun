@@ -28,6 +28,6 @@ describe("resolve", () => {
 
 describe("aliases", () => {
   it("exports an array of alias names", () => {
-    expect(resolve.aliases).toEqual(["express", "react"]);
+    expect(resolve.aliases).toEqual(["express", "react", "react-ts"]);
   });
 });
