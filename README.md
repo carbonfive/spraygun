@@ -33,6 +33,7 @@ For example, to generate a react app in a directory named hello-world:
 The officially supported spraygun templates are:
   -t express
   -t react
+  -t react-ts
 
 To use a custom template, specify one of the following:
   -p path   a local template directory
