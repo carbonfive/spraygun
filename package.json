@@ -2,7 +2,7 @@
   "name": "spraygun",
   "description": "Quickly generate JavaScript apps from Carbon Five-flavored templates",
   "keywords": [],
-  "version": "0.1.1",
+  "version": "0.2.0",
   "license": "MIT",
   "author": "Carbon Five",
   "repository": {

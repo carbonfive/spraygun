@@ -6,7 +6,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## Unreleased
 
-https://github.com/carbonfive/spraygun/compare/v0.1.1...HEAD
+https://github.com/carbonfive/spraygun/compare/v0.2.0...HEAD
+
+## 0.2.0 - 2018-09-28
+
+https://github.com/carbonfive/spraygun/compare/v0.1.1...v0.2.0
+
+- Add `react-ts` to list of official templates
 
 ## 0.1.1 - 2018-08-31
 
