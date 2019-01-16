@@ -26,8 +26,7 @@
     "start": "node bin/spraygun",
     "lint": "eslint 'src/**/*.js'",
     "test": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "precommit": "lint-staged"
+    "test:coverage": "jest --coverage"
   },
   "lint-staged": {
     "src/**/*.js": "eslint"
@@ -59,5 +58,10 @@
     "collectCoverageFrom": [
       "src/**/*.js"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
