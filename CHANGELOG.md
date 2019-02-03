@@ -6,7 +6,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## Unreleased
 
-https://github.com/carbonfive/spraygun/compare/v0.2.0...HEAD
+https://github.com/carbonfive/spraygun/compare/v0.2.1...HEAD
+
+## 0.2.1 - 2019-02-03
+
+https://github.com/carbonfive/spraygun/compare/v0.2.0...v0.2.1
+
+- Update dependencies: yargs 10.1 -> 12.0
 
 ## 0.2.0 - 2018-09-28
 
