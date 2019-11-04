@@ -1,38 +1,51 @@
-version: 2
+version: 2.1
+orbs:
+  node: circleci/node@1.1.6
+
 jobs:
-  build:
-    docker:
-      - image: circleci/node:8
-
-    working_directory: ~/repo
-
+  install_deps:
+    executor:
+      name: node/default
+      tag: "8"
     steps:
       - checkout
+      - node/with-cache:
+          steps:
+          - run: yarn install
+  lint:
+    executor:
+      name: node/default
+      tag: "8"
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+          - run: yarn lint
+  unit_tests:
+    executor:
+      name: node/default
+      tag: "8"
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+          - run:
+              name: yarn test
+              command: yarn test:coverage --ci --color --reporters=default --reporters=jest-junit --runInBand
+              environment:
+                JEST_JUNIT_OUTPUT_DIR: ./tmp/test-results
+                JEST_JUNIT_OUTPUT_NAME: jest.xml
+          - store_test_results:
+              path: ./tmp/test-results
 
-      - restore_cache:
-          key: v1-dependencies-{{ arch }}
-
-      - run:
-          name: npm install yarn
-          command: |
-            sudo npm install -g yarn
-            sudo chmod a+x /usr/local/bin/yarn
-
-      - run: yarn install
-
-      - save_cache:
-          key: v1-dependencies-{{ arch }}
-          paths:
-            - ~/.cache/yarn
-
-      - run: yarn lint
-
-      - run:
-          name: yarn test
-          command: yarn test:coverage --ci --color --reporters=default --reporters=jest-junit --runInBand
-          environment:
-            JEST_JUNIT_OUTPUT_DIR: ./tmp/test-results
-            JEST_JUNIT_OUTPUT_NAME: jest.xml
-
-      - store_test_results:
-          path: ./tmp/test-results
+workflows:
+  version: 2
+  build:
+    jobs:
+      - install_deps
+      - lint:
+          requires:
+            - install_deps
+      - unit_tests:
+          requires:
+            - install_deps
