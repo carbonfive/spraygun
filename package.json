@@ -34,7 +34,7 @@
   "dependencies": {
     "chalk": "^3.0.0",
     "shelljs": "^0.8.2",
-    "yargs-parser": "^15.0.0"
+    "yargs-parser": "^16.1.0"
   },
   "devDependencies": {
     "eslint": "^6.1.0",
