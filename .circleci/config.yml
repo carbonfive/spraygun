@@ -6,7 +6,7 @@ jobs:
   install_deps:
     executor:
       name: node/default
-      tag: "8"
+      tag: "10"
     steps:
       - checkout
       - node/with-cache:
@@ -15,7 +15,7 @@ jobs:
   lint:
     executor:
       name: node/default
-      tag: "8"
+      tag: "10"
     steps:
       - checkout
       - node/with-cache:
@@ -24,7 +24,7 @@ jobs:
   unit_tests:
     executor:
       name: node/default
-      tag: "8"
+      tag: "10"
     steps:
       - checkout
       - node/with-cache:
