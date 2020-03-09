@@ -5,11 +5,11 @@
 var nodeVersion = process.versions.node;
 var segments = nodeVersion.split(".");
 
-if (segments[0] < 8 || (segments[0] === "8" && segments[1] < 10)) {
+if (segments[0] < 10) {
   console.log(
     "Error: You are running Node " +
       nodeVersion +
-      ". Spraygun requires Node 8.10 or later."
+      ". Spraygun requires Node 10 or later."
   );
   process.exit(1);
 }
