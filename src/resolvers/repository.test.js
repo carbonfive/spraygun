@@ -6,8 +6,8 @@ jest.mock("shelljs", () => {
     error: jest.fn(),
     tempdir: jest.fn().mockReturnValue("/tmp"),
     config: {
-      reset: jest.fn()
-    }
+      reset: jest.fn(),
+    },
   };
 });
 
@@ -36,7 +36,7 @@ describe("resolve", () => {
 
     describe("and cache is not present", () => {
       const cache = {
-        isPresent: jest.fn().mockReturnValue(false)
+        isPresent: jest.fn().mockReturnValue(false),
       };
 
       beforeEach(() => {
@@ -55,7 +55,7 @@ describe("resolve", () => {
     describe("and cache is present", () => {
       const cache = {
         isPresent: jest.fn().mockReturnValue(true),
-        location: "path/to/cache"
+        location: "path/to/cache",
       };
 
       beforeEach(() => {
@@ -77,11 +77,11 @@ describe("resolve", () => {
     const cache = {
       isPresent: jest.fn().mockReturnValue(false),
       store: jest.fn(),
-      location: "path/to/cache"
+      location: "path/to/cache",
     };
 
     beforeEach(() => {
-      shell.exec.mockImplementation(arg => (command = arg));
+      shell.exec.mockImplementation((arg) => (command = arg));
       shell.error.mockReturnValue(false);
       cacheLookup.mockReturnValue(cache);
     });
