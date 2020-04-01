@@ -14,10 +14,10 @@ function cache(name) {
   return {
     location,
     isPresent: () => fs.existsSync(location),
-    store: dir => {
+    store: (dir) => {
       shell.rm("-rf", location);
       shell.mv(dir, location);
-    }
+    },
   };
 }
 

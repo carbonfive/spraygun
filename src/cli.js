@@ -17,7 +17,7 @@ const logo = chalk.redBright(`
 `);
 
 const aliasBullets = resolvers.template.aliases
-  .map(alias => chalk`    {yellow -t ${alias}}`)
+  .map((alias) => chalk`    {yellow -t ${alias}}`)
   .join("\n");
 
 const usage = chalk`${logo}
@@ -65,7 +65,7 @@ ${logo}
 
 function parseOptions(args) {
   const options = yargs(args, {
-    alias: { help: ["h"], template: ["t"], path: ["p"], repository: ["r"] }
+    alias: { help: ["h"], template: ["t"], path: ["p"], repository: ["r"] },
   });
 
   let templateName;

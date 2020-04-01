@@ -1,5 +1,5 @@
 module.exports = {
   template: require("./template"),
   repository: require("./repository"),
-  path: require("./path")
+  path: require("./path"),
 };
