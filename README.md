@@ -1,6 +1,6 @@
 # spraygun
 
-[![CircleCI](https://circleci.com/gh/carbonfive/spraygun/tree/master.svg?style=svg)](https://circleci.com/gh/carbonfive/spraygun/tree/master)
+[![CircleCI](https://circleci.com/gh/carbonfive/spraygun/tree/main.svg?style=svg)](https://circleci.com/gh/carbonfive/spraygun/tree/main)
 
 Spraygun is a JavaScript application generator that builds projects with Carbon Five preferences and best practices baked right in. Spend less time configuring and more building cool features.
 
@@ -68,7 +68,7 @@ Maintainers of spraygun follow these steps to publish a new version:
 1. [Create an npm account](https://www.npmjs.com/signup) if you don't have one already.
 2. Enable "Authorization and Publishing" 2FA for your npm account.
 3. Ask an existing spraygun maintainer to [add your npm account as a maintainer](https://www.npmjs.com/package/spraygun/access) for the spraygun package.
-4. Clone this repo and pull the latest `master` branch.
+4. Clone this repo and pull the latest `main` branch.
 5. Increment the version in `package.json` according to [semver conventions](https://semver.org).
 6. Commit the change (e.g. `git commit -m "Releasing v0.4.0"`).
 7. Tag the commit using an annotated tag (e.g. `git tag -a v0.4.0 -m v0.4.0`).
