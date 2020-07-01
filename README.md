@@ -1,6 +1,6 @@
 # spraygun
 
-[![CircleCI](https://circleci.com/gh/carbonfive/spraygun/tree/main.svg?style=svg)](https://circleci.com/gh/carbonfive/spraygun/tree/main)
+[![CircleCI](https://circleci.com/gh/carbonfive/spraygun/tree/main.svg?style=shield)](https://circleci.com/gh/carbonfive/spraygun/tree/main)
 
 Spraygun is a JavaScript application generator that builds projects with Carbon Five preferences and best practices baked right in. Spend less time configuring and more building cool features.
 
