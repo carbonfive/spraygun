@@ -10,11 +10,11 @@ describe("resolve", () => {
       const repositoryResolve = require("./repository");
       repositoryResolve.mockReturnValue("/path/to/resolved/repo");
 
-      const path = resolve("react");
+      const path = resolve("react-ts");
 
       expect(path).toEqual("/path/to/resolved/repo");
       expect(repositoryResolve).toHaveBeenCalledWith(
-        "https://github.com/carbonfive/spraygun-react.git"
+        "https://github.com/carbonfive/spraygun-react-ts.git"
       );
     });
   });

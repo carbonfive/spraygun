@@ -27,8 +27,8 @@ Usage: spraygun <template> <project-directory>
 
 Generate a project in the specified directory, based on a template.
 
-For example, to generate a react app in a directory named hello-world:
-  $ npx spraygun -t react hello-world
+For example, to generate a React TypeScript app in a directory named blog:
+  $ npx spraygun -t react-ts blog
 
 The officially supported spraygun templates are:
   -t express

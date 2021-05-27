@@ -25,8 +25,8 @@ const usage = chalk`${logo}
 
   Generate a project in the specified directory, based on a template.
 
-  For example, to generate a react app in a directory named hello-world:
-    {gray $} npx spraygun {yellow -t react} {green hello-world}
+  For example, to generate a React TypeScript app in a directory named blog:
+    {gray $} npx spraygun {yellow -t react-ts} {green blog}
 
   The officially supported spraygun templates are:
 ${aliasBullets}
