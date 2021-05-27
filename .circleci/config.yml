@@ -1,42 +1,44 @@
 version: 2.1
 orbs:
-  node: circleci/node@1.1.6
+  node: circleci/node@4.4.0
+
+executors:
+  node:
+    docker:
+      - image: cimg/node:14.17.0
+
+commands:
+  install-dependencies:
+    description: Install dependencies
+    steps:
+      - node/install-packages:
+          pkg-manager: yarn
 
 jobs:
   install_deps:
-    executor:
-      name: node/default
-      tag: "10"
+    executor: node
     steps:
       - checkout
-      - node/with-cache:
-          steps:
-            - run: yarn install
+      - install-dependencies
   lint:
-    executor:
-      name: node/default
-      tag: "10"
+    executor: node
     steps:
       - checkout
-      - node/with-cache:
-          steps:
-            - run: yarn lint
+      - install-dependencies
+      - run: yarn lint
   unit_tests:
-    executor:
-      name: node/default
-      tag: "10"
+    executor: node
     steps:
       - checkout
-      - node/with-cache:
-          steps:
-            - run:
-                name: yarn test
-                command: yarn test:coverage --ci --color --reporters=default --reporters=jest-junit --runInBand
-                environment:
-                  JEST_JUNIT_OUTPUT_DIR: ./tmp/test-results
-                  JEST_JUNIT_OUTPUT_NAME: jest.xml
-            - store_test_results:
-                path: ./tmp/test-results
+      - install-dependencies
+      - run:
+          name: yarn test
+          command: yarn test:coverage --ci --color --reporters=default --reporters=jest-junit --runInBand
+          environment:
+            JEST_JUNIT_OUTPUT_DIR: ./tmp/test-results
+            JEST_JUNIT_OUTPUT_NAME: jest.xml
+      - store_test_results:
+          path: ./tmp/test-results
 
 workflows:
   version: 2

@@ -14,7 +14,7 @@ Refer to the GitHub projects for each of these templates for more information.
 
 ## Usage
 
-To get started, make sure you have Node 10+ and Yarn installed, then run:
+To get started, make sure you have Node 14+ and Yarn installed, then run:
 
 ```
 $ npx spraygun --help
