@@ -5,7 +5,7 @@ orbs:
 executors:
   node:
     docker:
-      - image: cimg/node:14.17.0
+      - image: cimg/node:16.6.2
 
 commands:
   install-dependencies:
