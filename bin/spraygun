@@ -5,11 +5,11 @@
 var nodeVersion = process.versions.node;
 var segments = nodeVersion.split(".");
 
-if (segments[0] < 14) {
+if (segments[0] < 16) {
   console.log(
     "Error: You are running Node " +
       nodeVersion +
-      ". Spraygun requires Node 14 or later."
+      ". Spraygun requires Node 16 or later."
   );
   process.exit(1);
 }
