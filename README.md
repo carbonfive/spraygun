@@ -7,7 +7,6 @@ Spraygun is a JavaScript application generator that builds projects with Carbon 
 Three application templates are supported out of the box:
 
 - [spraygun-express](https://github.com/carbonfive/spraygun-express)
-- [spraygun-react](https://github.com/carbonfive/spraygun-react)
 - [spraygun-react-ts](https://github.com/carbonfive/spraygun-react-ts)
 
 Refer to the GitHub projects for each of these templates for more information.
@@ -32,7 +31,6 @@ For example, to generate a React TypeScript app in a directory named blog:
 
 The officially supported spraygun templates are:
   -t express
-  -t react
   -t react-ts
 
 To use a custom template, specify one of the following:
