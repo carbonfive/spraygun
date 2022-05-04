@@ -1,4 +1,0 @@
-# This file controls who will be automatically assigned to review pull requests.
-# https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners
-
-* @carbonfive/front-end-practice-group
