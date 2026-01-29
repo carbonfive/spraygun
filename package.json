@@ -38,7 +38,7 @@
     "yargs-parser": "^21.1.1"
   },
   "devDependencies": {
-    "eslint": "^8.27.0",
+    "eslint": "^9.39.2",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-jest": "^27.1.5",
     "eslint-plugin-prettier": "^4.2.1",
